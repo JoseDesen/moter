@@ -16,7 +16,10 @@
 			background-color:white;
 			color:white;
 		}
-		
+		#explicacao{
+			text-align:left;
+			font-size:35px;
+		}
 		</style>
 		<script>
 			var a=sessionStorage.getItem('carregou');
@@ -753,6 +756,11 @@
 			<input type="text" name="e5" id="e5"  disabled>
 			</br>
 		</form>
-		<div id="status"></div>
+		<div id="status"></div></br>
+		<div id="explicacao">
+		<input type="text" style="background-color:red;" disabled><b>Não tem na palavra</br>
+		<input type="text" style="background-color:blue;" disabled>Tem na palavra, mas está na posição errada</br>
+		<input type="text" style="background-color:green;" disabled>Tem na palavra e está na posição correta</b></br>
+		</div>
 	</body>
 </html>
