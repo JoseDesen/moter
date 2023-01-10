@@ -24,11 +24,59 @@
 				a=0;
 			}
 			function passar(inputId){
-				
+				var a=document.f.a.value;
+				var b=document.f.b.value;
+				var c=document.f.c.value;
+				var d=document.f.d.value;
+				var e=document.f.e.value;
+				if(inputId=="a"){
+					if(a.length==1){
+						document.getElementById('b').focus();
+					}
+					if(a.length==2){
+						document.f.a.value=a.slice(0, 1);
+						document.getElementById('b').focus();
+					}
+				}
+				if(inputId=="b"){
+					if(b.length==1){
+					document.getElementById('c').focus();
+					}
+					if(b.length==2){
+						document.f.b.value=b.slice(0, 1);
+						document.getElementById('c').focus();
+					}
+				}
+				if(inputId=="c"){
+					if(c.length==1){
+					document.getElementById('d').focus();
+					}
+					if(c.length==2){
+						document.f.c.value=c.slice(0, 1);
+						document.getElementById('d').focus();
+					}
+				}
+				if(inputId=="d"){
+					if(d.length==1){
+					document.getElementById('e').focus();
+					}
+					if(d.length==2){
+						document.f.d.value=d.slice(0, 1);
+						document.getElementById('e').focus();
+					}
+				}
+				if(inputId=="e"){
+					if(e.length==1){
+					document.getElementById('a').focus();
+					}
+					if(e.length==2){
+						document.f.e.value=e.slice(0, 1);
+						document.getElementById('a').focus();
+					}
+				}
 			}
 			function carregou(){
 				sessionStorage.setItem('carregou', parseInt(a)+1);
-				alert(a);
 			}
 			function ganhou(){
 				var a1=document.getElementById('a1').style.background;
